@@ -3,7 +3,7 @@ let countEl = document.getElementById("count-el")
 let count = 0
 
 function increment() {
-    count += 1
+    count ++ 
     countEl.textContent = count
 }
 
@@ -15,5 +15,17 @@ function save() {
 }
 
 function clearAll() {
-    saveEl.textContent = "Previous Sets: "
+    saveEl.textContent = "Previous sets: "
+    count = 0
+    countEl.textContent = count
+}
+
+function decrement() {
+    if (countEl.textContent > 0) {
+        count --
+        countEl.textContent = count
+    } else {
+        countEl.textContent = 0
+    }
+
 }
