@@ -44,9 +44,13 @@ div {
     max-width: 100%;
 }
 
+.clear {
+    border: 2px solid white ;
+}
+
 p {
     color: whitesmoke;
-    font-size: 7vh;
+    font-size: 6vh;
     border: 2px solid;
     background-color: gray 
 }
